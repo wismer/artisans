@@ -1,0 +1,259 @@
+@import '_settings'
+@import 'roots-css/animation'
+normalize()
+base()
+buttons()
+html
+  font-family: 'Jacques Francois Shadow', cursive;
+// HOME INDEX SECTION
+#main-body
+  // background: linear-gradient(left, #777, #444 65%, #777)
+  // background: #777 url('/img/excavated-beauty-test-faded.png') bottom left no-repeat
+  background-image: url('/img/excavated-beauty-test-faded.png'), url('noise.png'), linear-gradient(top, #777, 85% #444)
+  background-attachment: fixed, scroll, scroll
+  background-position: bottom left, center, center
+  background-repeat: no-repeat, repeat, no-repeat
+  background-color: #777
+  margin: 0
+  padding: 0
+  min-height: 1000px
+.top-title
+  margin: 0
+  border-bottom: 1px solid black
+  background-image: url('/img/header-piece.png'), url('/img/mask-banner.png')
+  background-position: 75%, 25%
+  background-repeat: no-repeat, no-repeat
+  h1
+    margin: 0
+    text-align: center
+    font-size: 40px
+    color: black
+  a
+    text-decoration: none
+.bottom
+  color: white
+  float: right
+  fixed: right 0 top 200px
+  background: black
+.nav-bar
+  width:100%
+  float:right
+  text-align: center
+  background: #444
+  z-index: 2
+  ul
+    margin: 0
+    padding: 2px 0 2px 0
+  li
+    list-style: none
+    display: inline
+    padding: 2px 20px 2px 20px
+    margin-right: -1px
+    &:hover
+      background: black
+  a
+    text-decoration: none
+    color: white
+    text-align: center
+    &:hover
+      color: white
+// GALLERY SECTION
+.nav-help
+  padding-top: 100px
+  p
+    margin: 0
+    text-align: center
+    font-size: 20px
+    font-style: italic
+    color: white
+.sub-title
+  display: none
+  margin: 0
+  color: white
+  position: absolute
+  top: 185px
+  border: 3px solid #444
+  background: black
+  border-radius: 3px
+//   gallery before thumbnail
+.gallery-container
+  margin-top: 20px
+.cover-pics
+  margin: 0 auto
+  width: 1000px
+  padding: 80px 10px 10px 10px 
+  img
+    margin: 0 auto
+  div
+    padding-right:20px
+
+  .beauty
+    float:right
+    animation: fadeInUp 2s 1
+  .eve
+    float: right
+    animation: fadeInUp 2s 1
+  .cubism
+    float: right
+    animation: fadeInDown 2s 1
+.portfolio
+  button(gray)
+.gallery-nav
+  float: left
+
+
+.btn
+  button(gray)
+  display: none
+.nav-left
+  relative: top 20px left 25%
+  float:left
+.nav-right
+  relative: top 20px right 25%
+  float: right
+
+.thumbnails
+  background: url('noise.png') black
+  border-radius: 0px 5px 0 5px
+  animation: fadeIn 3s 1
+.single-images
+  img
+    float: left
+    opacity: 0.7
+    &:hover
+      opacity: 1.0
+// holder for ajax'ed images
+.picture-frame
+  margin: 0 auto
+  padding: 0 25% 0 25%
+  div
+    padding: 100px 5px 50px 5px
+    width: 350px
+    margin: 0 auto
+  img
+    animation: fadeIn 1s 1
+    border: 1px solid black
+  li
+    display: inline
+.thumbnail-nav
+  visibility: visible
+  overflow:hidden
+  position:relative
+  z-index: 2
+  left: 0
+  width: 330px
+  margin: 0 auto
+  animation: fadeIn 1s 1
+  padding: 10px 0 10px 0
+  display: none
+  ul
+    margin: 0
+    padding: 0
+    position: relative
+    list-style-type: none
+    z-index: 1
+    overflow: hidden
+    width: 3000px
+    li
+      overflow:hidden
+      float:left
+      width: 55px
+      height: 55px
+      a
+        text-decoration:none
+        color: #777
+        p  // floating tool-tips with the name of the piece
+          float: right
+          position: absolute
+          z-index: 2
+
+.shift-left
+  display: none
+  float: left
+  margin-left: -42px
+  relative: top 38% right 0
+  color: white
+  size: 118px 228px
+  background: url('/img/nav-left-arrow.png')
+  opacity: 0.7
+  &:hover
+    opacity: 1
+  a
+    absolute: top left
+    size: 118px 0
+    padding-top: 228px
+.shift-right
+  display: none
+  float: right
+  relative: top 38% right 0
+  color: white
+  font-size: 80px
+  size: 118px 228px
+  background: url('/img/nav-right-arrow.png')
+  opacity: 0.7
+  &:hover
+    opacity: 1
+  a
+    absolute: top left
+    size: 118px 0
+    padding-top: 228px
+.thumbnail-side
+  display: hidden
+  absolute: top 6px right 0px
+  a
+    color: black
+  img
+    opacity: 0.7
+    &:hover
+      opacity: 1
+  li
+    list-style: none
+// thumbnail shifters
+.skip-right
+  float: right
+  color: white
+  font-size: 40px
+.skip-left
+  float: left
+  font-size: 40px
+  color: white
+// ABOUT THE ARTIST SECTION
+.about-container
+  padding: 10px
+  width: 960px
+  margin: 35px auto
+  background: black
+.anvil
+  float: left
+  padding-right: 10px
+.artist-statement
+  color: white
+// STEEL SECTION
+.steel-container
+  background: url('/img/noise.png') #444444
+// MASONRY SECTION
+.stone-container
+  background: url('/img/noise.png') #444444
+  width: 960px
+  margin: 40px auto
+.masonry
+  color: white
+  padding: 10pxfac
+  
+// TEST THUMBNAIL THINGIE
+// .test
+//   height: 65px
+//   background: linear-gradient(bottom, #777, 85% #444)
+//   fixed: bottom 0
+//   width: 100%
+//   ul
+//     margin: 0 auto
+//     padding: 0 0 0 20px
+//     margin-top: -25px
+//     li
+//       display: inline
+//       margin-top: -20px
+//       padding-right: 10px
+//       a
+//         text-decoration: none
+//         color: black

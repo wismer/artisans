@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+    <meta name="description" content="description of your site">
+    <meta name="author" content="author of the site">
+    <title>Stone&Steel</title>
+    <link href="http://fonts.googleapis.com/css?family=Antic+Didone" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="/css/example.css">
+  </head>
+  <body id="main-body">
+    <div class="main-container">
+      <div class="top-title"><a href="/">
+          <h1>STONE & STEEL ARTISANS</h1></a>
+        <nav class="nav-bar">
+          <ul>
+            <li> <a href="/gallery">GALLERY</a></li>
+            <li><a href="/about">ABOUT THE ARTIST</a></li>
+            <li><a href="/shows">SHOWS</a></li>
+            <li><a href="/steel">STEEL FABRICATION</a></li>
+            <li><a href="/stone">MASONRY</a></li>
+          </ul>
+        </nav>
+      </div>
+<div class="gallery-container">
+  <div class="main-gallery">
+    <div class="thumbnails">
+      <div class="nav-buttons"><span class="skip-left">&laquo;      </span><span class="skip-right">&raquo;</span></div>
+      <div class="thumbnail-nav">
+        <ul class="slides">
+          <li><a href="" value="bird"><img src="/img/thumbnails/bird.jpg" alt="Bird, 2002, Iron"/></a></li>
+          <li><a href="" value="bowl"><img src="/img/thumbnails/bowl.jpg" alt="Bowl"/></a></li>
+          <li><a href="" value="fish-water"><img src="/img/thumbnails/fish-water.jpg" alt="Fish Jumping"/></a></li>
+          <li><a href="" value="bird-flying"><img src="/img/thumbnails/flying-bird.jpg" alt="Bird in Flight"/></a></li>
+          <li><a href="" value="excavated-beauty"><img src="/img/thumbnails/excavated-beauty.jpg" alt="Excavated Beauty"/></a></li>
+          <li> <a href="" value="brave"><img src="/img/thumbnails/brave.jpg"/></a></li>
+          <li><a href="" value="adam-eve"><img src="/img/thumbnails/adam-eve.jpg"/></a></li>
+          <li><a href="" value="eclipse"><img src="/img/thumbnails/eclipse.jpg"/></a></li>
+          <li><a href="" value="cubism"><img src="/img/thumbnails/cubism.jpg"/></a></li>
+          <li><a href="" value="woman-brave"><img src="/img/thumbnails/woman-brave.jpg"/></a></li>
+          <li><a href="" value="wind-dancer"><img src="/img/thumbnails/wind-dancer.jpg"/></a></li>
+          <li><a href="" value="walking-man"><img src="/img/thumbnails/walking-man.jpg"/></a></li>
+          <li> <a href="" value="stone-stool"><img src="/img/thumbnails/stone-stool.jpg" alt="Stone Stool"/></a></li>
+          <li><a href="" value="split-stone"><img src="/img/thumbnails/split-stone.jpg"/></a></li>
+          <li><a href="" value="spirit"><img src="/img/thumbnails/spirit.jpg"/></a></li>
+          <li><a href="" value="spiral-head"><img src="/img/thumbnails/spiral-head.jpg"/></a></li>
+          <li><a href="" value="excavated-beauty"><img src="/img/thumbnails/excavated-beauty.jpg"/></a></li>
+          <li> <a href="" value="gauge"><img src="/img/thumbnails/12-gauge.jpg"/></a></li>
+          <li><a href="" value="flying-bird"><img src="/img/thumbnails/flying-bird.jpg"/></a></li>
+          <li><a href="" value="excavated-beauty"><img src="/img/thumbnails/excavated-beauty.jpg"/></a></li>
+          <li><a href="" value="walking-man"><img src="/img/thumbnails/walking-man.jpg"/></a></li>
+          <li><a href="" value="weird-man"><img src="/img/thumbnails/weird-man.jpg"/></a></li>
+          <li><a href="" value="wind-dancer"><img src="/img/thumbnails/wind-dancer.jpg" alt="Excavated Beauty"/></a></li>
+          <li> <a href="" value="women-kissing"><img src="/img/thumbnails/women-kissing.jpg"/></a></li>
+          <li><a href="" value="flying-bird"><img src="/img/thumbnails/flying-bird.jpg"/></a></li>
+          <li><a href="" value="dark-sea"><img src="/img/thumbnails/dark-sea.jpg"/></a></li>
+          <li><a href="" value="brave"><img src="/img/thumbnails/brave.jpg"/></a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="picture-frame">
+    <section class="fade-left"></section>
+    <section class="fade-right">   </section>
+    <section class="nav-help">
+      <p>To navigate, select the large white arrows to go left or right according to the thumbnails shown above. To scroll through the thumbnails, click the right or left arrows.</p>
+    </section>
+    <nav class="shift-left"><a href="#"></a></nav>
+    <nav class="shift-right"><a href="#"></a></nav>
+  </div>
+</div>
+    </div>
+  </body>
+  <script data-main="/js/main" src="/js/require.js"></script><script>protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://'; address = protocol + window.location.host + window.location.pathname + '/ws'; socket = new WebSocket(address);
+socket.onmessage = function(msg) { msg.data == 'reload' && window.location.reload() }</script>
+</html>

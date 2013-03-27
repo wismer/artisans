@@ -1,0 +1,8 @@
+{
+  "name": "jcarousellite",
+  "version": "1.8.1",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/kswedberg/jquery-carousel-lite.git"
+  }
+}
